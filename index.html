@@ -98,21 +98,87 @@
 <!--Replace the images here with examples of good design.-->
   
 
-  <div class="photogrid">
-  <div class="row">
-      <div class="column">
-          <img src="pgrid1.jpg" alt="Light/Dark mode">
-          <img src="pgrid2.jpg" alt="Motivational apps">
-      </div>
-      <div class="column">
-          <img src="pgrid3.jpg" alt="Applications that are usable on mobile and watch devices">
-          <img src="pgrid4.jpg" alt="Simple designs create calm in otherwise complicated prcedures">
-      </div>
-      <div class="column">
-          <img src="pgrid5.jpg" alt="Enviromental Design gives clear directions">
-          
-      </div>
-  </div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Grid with Captions</title>
+    <style>
+        /* Style for the photogrid layout */
+        .photogrid {
+            display: flex;
+            flex-wrap: wrap; /* Allow wrapping of rows */
+            gap: 10px; /* Adds space between columns */
+        }
+        .column {
+            flex: 1; /* Makes the columns flexible */
+            max-width: 25%; /* Limit each column to 25% width */
+        }
+        .column figure {
+            margin: 0; /* Removes default margin from figure */
+            padding: 0;
+        }
+        /* Style the images */
+        .photogrid img {
+            width: 100%; /* Make the images take the full width of the column */
+            height: auto; /* Keep aspect ratio of the images */
+            display: block;
+            border: 2px solid white; /* Optional: add border to images */
+        }
+        /* Style for the figcaption */
+        .photogrid figcaption {
+            text-align: center; /* Center-align the caption text */
+            font-style: italic; /* Italicize the captions */
+            color: white; /* Set the caption text color */
+            margin-top: 5px; /* Space between image and caption */
+        }
+        /* Optional: add a background color to the body */
+        body {
+            background-color: black; /* Black background */
+            color: white; /* White text */
+            font-family: Arial, sans-serif; /* Arial font */
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="photogrid">
+        <div class="column">
+            <figure>
+                <img src="pgrid1.jpg" alt="Light/Dark mode">
+                <figcaption>Light/Dark mode</figcaption>
+            </figure>
+            <figure>
+                <img src="pgrid2.jpg" alt="Motivational apps">
+                <figcaption>Motivational apps</figcaption>
+            </figure>
+        </div>
+        <div class="column">
+            <figure>
+                <img src="pgrid3.jpg" alt="Applications usable on mobile and watch devices">
+                <figcaption>Applications usable on mobile and watch devices</figcaption>
+            </figure>
+            <figure>
+                <img src="pgrid4.jpg" alt="Simple designs create calm in complicated procedures">
+                <figcaption>Simple designs create calm in complicated procedures</figcaption>
+            </figure>
+        </div>
+        <div class="column">
+            <figure>
+                <img src="pgrid5.jpg" alt="Environmental Design gives clear directions">
+                <figcaption>Environmental Design gives clear directions</figcaption>
+            </figure>
+        </div>
+        <div class="column">
+            <figure>
+                <img src="pgrid6.jpg" alt="Double page mag spread">
+                <figcaption>Double page mag spread</figcaption>
+            </figure>
+        </div>
+    </div>
+</body>
+</html>
       <p><em> We can find good designs everywhere - these examples solve user experience problems while be aesthetically interesting!  </em></p>
   </div>
 
